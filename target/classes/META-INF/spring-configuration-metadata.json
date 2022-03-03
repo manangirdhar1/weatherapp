@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "app.weather",
+      "type": "com.weather.weatherspringboot.WeatherAppProperties",
+      "sourceType": "com.weather.weatherspringboot.WeatherAppProperties"
+    },
+    {
+      "name": "app.weather.api",
+      "type": "com.weather.weatherspringboot.WeatherAppProperties$OpenWeahtherApi",
+      "sourceType": "com.weather.weatherspringboot.WeatherAppProperties",
+      "sourceMethod": "getApi()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.weather.api.key",
+      "type": "java.lang.String",
+      "sourceType": "com.weather.weatherspringboot.WeatherAppProperties$OpenWeahtherApi"
+    },
+    {
+      "name": "app.weather.locations",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.weather.weatherspringboot.WeatherAppProperties"
+    }
+  ],
+  "hints": []
+}

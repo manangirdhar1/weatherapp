@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Template for presenting weather summary-->
+<html>
+<head>
+    <meta charset="UTF-8"></meta>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet"
+          type="text/css"></link>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"
+          type="text/css"></link>
+    <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+    <title>Weather App</title>
+</head>
+<body>
+<h1>Weather Summary</h1>
+<table>
+    <tbody>
+    <tr>
+        <td>City</td>
+        <td th:text="${summary.city}"></td>
+    </tr>
+    <tr>
+        <td>Updated Time</td>
+        <td th:text="${summary.currentTime}"></td>
+    </tr>
+    <tr>
+        <td>Weather</td>
+        <td th:text="${summary.weatherMain}"></td>
+    </tr>
+    <tr>
+        <td>Temperature</td>
+        <td th:text="${summary.temperature}"></td>
+    </tr>
+    <tr>
+        <td>Wind</td>
+        <td th:text="${summary.windSpeed}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
